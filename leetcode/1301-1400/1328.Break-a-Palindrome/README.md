@@ -1,28 +1,28 @@
 # [1328.Break a Palindrome][title]
 
-> [!WARNING|style:flat]
-> This question is temporarily unanswered if you have good ideas. Welcome to [Create Pull Request PR](https://github.com/kylesliu/awesome-golang-algorithm)
-
 ## Description
+Given a palindromic string of lowercase English letters `palindrome`, replace **exactly one** character with any lowercase English letter so that the resulting string is **not** a palindrome and that it is the **lexicographically smallest** one possible.
+
+Return the resulting string. If there is no way to replace a character to make it not a palindrome, return an **empty string**.
+
+A string `a` is lexicographically smaller than a string `b` (of the same length) if in the first position where `a` and `b` differ, `a` has a character strictly smaller than the corresponding character in `b`. For example, `"abcc"` is lexicographically smaller than `"abcd"` because the first position they differ is at the fourth character, and `'c'` is smaller than `'d'`.
 
 **Example 1:**
 
 ```
-Input: a = "11", b = "1"
-Output: "100"
+Input: palindrome = "abccba"
+Output: "aaccba"
+Explanation: There are many ways to make "abccba" not a palindrome, such as "zbccba", "aaccba", and "abacba".
+Of all the ways, "aaccba" is the lexicographically smallest.
 ```
 
-## 题意
-> ...
+**Example 2:**
 
-## 题解
-
-### 思路1
-> ...
-Break a Palindrome
-```go
 ```
-
+Input: palindrome = "a"
+Output: ""
+Explanation: There is no way to replace a single character to make "a" not a palindrome, so return an empty string.
+```
 
 ## 结语
 
