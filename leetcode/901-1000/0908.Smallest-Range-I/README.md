@@ -1,28 +1,37 @@
 # [908.Smallest Range I][title]
 
-> [!WARNING|style:flat]
-> This question is temporarily unanswered if you have good ideas. Welcome to [Create Pull Request PR](https://github.com/kylesliu/awesome-golang-algorithm)
-
 ## Description
+You are given an integer array `nums` and an integer `k`.
+
+In one operation, you can choose any index `i` where `0 <= i < nums.length` and change `nums[i]` to `nums[i] + x` where `x` is an integer from the range `[-k, k]`. You can apply this operation **at most once** for each index i.
+
+The **scope** of `nums` is the difference between the maximum and minimum elements in `nums`.
+
+Return the minimum **score** of nums after applying the mentioned operation at most once for each index in it.
 
 **Example 1:**
 
 ```
-Input: a = "11", b = "1"
-Output: "100"
+Input: nums = [1], k = 0
+Output: 0
+Explanation: The score is max(nums) - min(nums) = 1 - 1 = 0.
 ```
 
-## 题意
-> ...
+**Example 2:**
 
-## 题解
-
-### 思路1
-> ...
-Smallest Range I
-```go
+```
+Input: nums = [0,10], k = 2
+Output: 6
+Explanation: Change nums to be [2, 8]. The score is max(nums) - min(nums) = 8 - 2 = 6.
 ```
 
+**Example 3:**
+
+```
+Input: nums = [1,3,6], k = 3
+Output: 0
+Explanation: Change nums to be [4, 4, 4]. The score is max(nums) - min(nums) = 4 - 4 = 0.
+```
 
 ## 结语
 
