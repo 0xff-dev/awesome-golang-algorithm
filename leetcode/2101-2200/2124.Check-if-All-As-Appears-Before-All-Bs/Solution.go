@@ -1,5 +1,13 @@
 package Solution
 
-func Solution(x bool) bool {
-	return x
+func Solution(s string) bool {
+	lastA, earliestB := -1, 1000000007
+	for i := range s {
+		if s[i] == 'a' {
+			lastA = i
+			continue
+		}
+		earliestB = min(earliestB, i)
+	}
+	return lastA < earliestB
 }
