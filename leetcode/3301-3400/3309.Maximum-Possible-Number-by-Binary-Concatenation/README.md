@@ -1,28 +1,36 @@
 # [3309.Maximum Possible Number by Binary Concatenation][title]
 
-> [!WARNING|style:flat]
-> This question is temporarily unanswered if you have good ideas. Welcome to [Create Pull Request PR](https://github.com/kylesliu/awesome-golang-algorithm)
-
 ## Description
+You are given an array of integers `nums` of size 3.
+
+Return the **maximum** possible number whose binary representation can be formed by **concatenating** the binary representation of **all** elements in `nums` in some order.
+
+**Note** that the binary representation of any number does not contain leading zeros.
+
 
 **Example 1:**
 
 ```
-Input: a = "11", b = "1"
-Output: "100"
+Input: nums = [1,2,3]
+
+Output: 30
+
+Explanation:
+
+Concatenate the numbers in the order [3, 1, 2] to get the result "11110", which is the binary representation of 30.
 ```
 
-## 题意
-> ...
+**Example 2:**
 
-## 题解
-
-### 思路1
-> ...
-Maximum Possible Number by Binary Concatenation
-```go
 ```
+Input: nums = [2,8,16]
 
+Output: 1296
+
+Explanation:
+
+Concatenate the numbers in the order [2, 8, 16] to get the result "10100010000", which is the binary representation of 1296.
+```
 
 ## 结语
 
