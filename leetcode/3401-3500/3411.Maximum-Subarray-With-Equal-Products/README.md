@@ -1,28 +1,47 @@
 # [3411.Maximum Subarray With Equal Products][title]
 
-> [!WARNING|style:flat]
-> This question is temporarily unanswered if you have good ideas. Welcome to [Create Pull Request PR](https://github.com/kylesliu/awesome-golang-algorithm)
-
 ## Description
+You are given an array of **positive** integers `nums`.
+
+An array arr is called **product equivalent** if `prod(arr) == lcm(arr) * gcd(arr)`, where:
+
+- `prod(arr)` is the product of all elements of `arr`.
+- `gcd(arr)` is the GCD of all elements of `arr`.
+- `lcm(arr)` is the LCM of all elements of `arr`.
+
+Return the length of the **longest product equivalent subarray** of `nums`.
 
 **Example 1:**
 
 ```
-Input: a = "11", b = "1"
-Output: "100"
+Input: nums = [1,2,1,2,1,1,1]
+
+Output: 5
+
+Explanation: 
+
+The longest product equivalent subarray is [1, 2, 1, 1, 1], where prod([1, 2, 1, 1, 1]) = 2, gcd([1, 2, 1, 1, 1]) = 1, and lcm([1, 2, 1, 1, 1]) = 2.
 ```
 
-## 题意
-> ...
+**Example 2:**
 
-## 题解
+```
+Input: nums = [2,3,4,5,6]
 
-### 思路1
-> ...
-Maximum Subarray With Equal Products
-```go
+Output: 3
+
+Explanation: 
+
+The longest product equivalent subarray is [3, 4, 5].
 ```
 
+**Example 3:**
+
+```
+Input: nums = [1,2,3,1,4,5,1]
+
+Output: 5
+```
 
 ## 结语
 
